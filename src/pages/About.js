@@ -2,7 +2,7 @@ import { Fragment } from "react/jsx-runtime";
 
 function Aboutpage()
 {
-    return <h1>this is first page ggggggg</h1>;
+    return <h1 style={{color:"red",backgroundColor:"green"}}>this is first page ggggggg</h1>;
 }
 
 export default Aboutpage;
