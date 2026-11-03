@@ -1,15 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 function UserRegistorpage() {
+
+const [a,b]=useState("red");
+
+const mycolor = (x)=>{
+    console.log(x);
+    b(x.target.value);
+}
+
+
    return (
-        <div className='container'>
+        <div className='container' style={{backgroundColor:a}}>
             <div className='row justify-content-center'>
                 <div className='col-md-8 shadow m-3'>
                     <div className='container-fluid'>
                         <div className='row'>
                             <div className='col-12 text-center p-3'>
-                                <p className='h3'>User Registor</p>
+                                <p className='h3' style={{backgroundColor:"orange"}}>User Registor</p>
+                                <input type='color' onInput={mycolor}/>
                             </div>
                             <div className='col-md-6'>
                                 <div class="mb-3">
