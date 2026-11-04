@@ -1,0 +1,42 @@
+.management-card {
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.management-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12) !important;
+}
+
+.management-card .btn {
+  pointer-events: none;
+}
+
+
+.module-card {
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  background: #fff;
+  transition: 0.2s ease;
+  cursor: pointer;
+  min-height: 115px;
+}
+
+.module-card:hover {
+  border-color: #6c757d;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.10);
+  transform: translateY(-3px);
+}
+
+.module-icon {
+  font-size: 27px;
+  color: #495057;
+}
+
+.module-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: #343a40;
+  line-height: 1.4;
+}
