@@ -25,17 +25,6 @@ function Homepage() {
   return (
     <div className="bg-light min-vh-100">
       
-
-      <nav className="navbar navbar-dark bg-dark shadow">
-        <div className="container-fluid px-4">
-          <Link className="navbar-brand fw-bold" to="/">
-            Management Portal
-          </Link>
-          <span className="text-white">Welcome, Admin</span>
-        </div>
-      </nav>
-
-      {/* Main Content */}
       <div className="container py-5">
         
         <div className="text-center mb-5">
@@ -45,7 +34,7 @@ function Homepage() {
           </p>
         </div>
 
-        <div className="row justify-content-center g-4">
+        <div className="row justify-content-center g-4 text-center">
 
           {applications.map((item) => (
             <div className="col-md-6 col-lg-4" key={item.id}>
@@ -61,7 +50,7 @@ function Homepage() {
 
                     <div className={`bg-${item.color}-subtle rounded-3 
                       d-flex align-items-center justify-content-center mb-4`}
-                      style={{ width: '70px', height: '70px', fontSize: '32px' }}>
+                      style={{ width: '70px', height: '70px', fontSize: '25px' }}>
                       {item.icon}
                     </div>
 
@@ -69,23 +58,8 @@ function Homepage() {
                       {item.title}
                     </h4>
 
-                    <p className="text-secondary">
-                      {item.description}
-                    </p>
 
-                    <div className="d-flex justify-content-between 
-                      align-items-center mt-4">
-
-                      <span className={`badge bg-${item.color}-subtle 
-                        text-${item.color} p-2`}>
-                        {item.count}
-                      </span>
-
-                      <span className={`btn btn-${item.color} btn-sm`}>
-                        Open Application →
-                      </span>
-
-                    </div>
+                    
 
                   </div>
                 </div>
@@ -97,9 +71,7 @@ function Homepage() {
         </div>
       </div>
 
-      <footer className="text-center text-secondary py-4">
-        © 2026 Management Portal. All Rights Reserved.
-      </footer>
+      
     </div>
   
   )
