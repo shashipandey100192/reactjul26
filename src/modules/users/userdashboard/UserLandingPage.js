@@ -3,6 +3,7 @@ import Appheader from '../../sharecomponents/Appheader'
 import Appsidebar from '../../sharecomponents/Appsidebar'
 import Appfooter from '../../sharecomponents/Appfooter'
 import UserMain from './UserMain'
+import { Outlet } from 'react-router-dom'
 
 function UserLandingPage() {
   return (
@@ -14,7 +15,7 @@ function UserLandingPage() {
             <Appsidebar />
           </div>
           <div className='col-md-10 border' style={{ minHeight: '90vh' }}>
-            <UserMain />
+            <Outlet></Outlet>
 
           </div>
         </div>

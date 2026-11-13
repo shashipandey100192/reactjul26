@@ -9,6 +9,7 @@ import UserMain from './modules/users/userdashboard/UserMain';
 import UserLogin from './modules/users/auth/UserLogin';
 import UserRegistor from './modules/users/auth/UserRegistor';
 import UserLandingPage from './modules/users/userdashboard/UserLandingPage';
+import Productpage from './modules/users/userdashboard/Productpage';
 
 
 
@@ -20,7 +21,12 @@ root.render(
         <Route path='' element={<Homepage/>}/>
         <Route path='users' element={<UserLogin/>}/>
         <Route path='users/registor' element={<UserRegistor/>}/>
-        <Route path='userdashboard' element={<UserLandingPage/>}></Route>
+        <Route path='userdashboard' element={<UserLandingPage/>}>
+              <Route path='' element={<UserMain/>}/>
+              <Route path='productlist' element={<Productpage/>}/>
+        
+        
+        </Route>
         <Route path='xyz' element={<UserMain/>}/>
 
       </Routes>
