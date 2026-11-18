@@ -10,6 +10,7 @@ import UserLogin from './modules/users/auth/UserLogin';
 import UserRegistor from './modules/users/auth/UserRegistor';
 import UserLandingPage from './modules/users/userdashboard/UserLandingPage';
 import Productpage from './modules/users/userdashboard/Productpage';
+import Productdetails from './modules/users/userdashboard/Productdetails';
 
 
 
@@ -24,6 +25,7 @@ root.render(
         <Route path='userdashboard' element={<UserLandingPage/>}>
               <Route path='' element={<UserMain/>}/>
               <Route path='productlist' element={<Productpage/>}/>
+              <Route path='productlist/details/:id' element={<Productdetails/>}/>
         
         
         </Route>
