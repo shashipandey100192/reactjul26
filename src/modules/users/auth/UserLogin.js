@@ -1,13 +1,27 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { useForm } from 'react-hook-form'
+import { toast,ToastContainer } from 'react-toastify';
 
 function UserLogin() {
 
 const {register,handleSubmit,formState: { errors }} = useForm();
 
+const xyz = useNavigate();
 const myform = (formdata)=>{
     console.log(formdata);
+    if(formdata.email==="admin@gmail.com" && formdata.pass==="123456")
+    {
+        toast.success("welcome to dashboard",{position:"top-left",theme:'dark',autoClose:2000});
+        setTimeout(()=>{
+            xyz("/userdashboard");
+        },2000);
+
+    }
+    else
+    {
+        toast.warning("email and password invalid",{position:"top-left",theme:'dark',autoClose:2000});
+    }
     
 }
 
@@ -21,6 +35,7 @@ const myform = (formdata)=>{
                         <div className='row'>
                             <div className='col-12 text-center p-3'>
                                 <p className='h3 italic'>User Login</p>
+                                <ToastContainer/>
                             </div>
                             <div className='col-md-12'>
                                 <div class="mb-3">

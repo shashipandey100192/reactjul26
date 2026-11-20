@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "email": "shashiweb64@gmail.com",
+      "phone": "6666666",
+      "date": "2026-11-05",
+      "username": "admin",
+      "pass": "54635463",
+      "id": "D1oqWlexv_0"
+    },
+    {
+      "email": "shashiweb64@gmail.com",
+      "phone": "6666666",
+      "date": "2026-11-05",
+      "username": "admin",
+      "pass": "54635463",
+      "id": "ZMtYitj0hig"
+    },
+    {
+      "email": "shashiweb64@gmail.com",
+      "phone": "6666666",
+      "date": "2026-11-05",
+      "username": "admin",
+      "pass": "54635463",
+      "id": "Hrt_dUnuujk"
+    },
+    {
+      "email": "rohit@gmail.com",
+      "phone": "878787878",
+      "date": "2026-11-19",
+      "username": "rohit singh",
+      "pass": "123456",
+      "id": "-428mXwGpXc"
+    }
+  ],
+  "cards": [],
+  "products": [],
+  "appsmenu": [],
+  "$schema": "./node_modules/json-server/schema.json"
+}
