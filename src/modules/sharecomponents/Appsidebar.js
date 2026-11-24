@@ -1,5 +1,7 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import { appsidebar,adminappsidebar } from '../jsonfile.js';
+import { FcCheckmark } from "react-icons/fc";
 
 function Appsidebar() {
     return (
@@ -12,9 +14,13 @@ function Appsidebar() {
                     </button>
                     <div class="collapse" id="home-collapse">
                         <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                            <li><Link to="productlist" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Products</Link></li>
-                            <li><Link to="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Updates</Link></li>
-                            <li><Link to="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Reports</Link></li>
+                            {appsidebar.map((sm)=>{
+                                return(
+                                    <li><Link to={sm.userroute} class="link-body-emphasis d-inline-flex text-decoration-none rounded"> <FcCheckmark/>{sm.usermenu}</Link></li>
+                                )
+                            })}
+                            
+                            
                         </ul>
                     </div>
                 </li>

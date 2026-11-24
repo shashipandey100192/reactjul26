@@ -1,0 +1,56 @@
+export const appsidebar = [
+    {
+        "usermenu":"Products",
+        "userroute":"productlist",
+        "usericon":"",
+    },
+    {
+        "usermenu":"Props",
+        "userroute":"propspage",
+        "usericon":"",
+    },
+    {
+        "usermenu":"Graph",
+        "userroute":"graphpage",
+        "usericon":"",
+    },
+    {
+        "usermenu":"Lazyloading",
+        "userroute":"lazyloadingpage",
+        "usericon":"",
+    },
+    {
+        "usermenu":"Redux",
+        "userroute":"reduxpage",
+        "usericon":"",
+    },
+    {
+        "usermenu":"Others",
+        "userroute":"others",
+        "usericon":"",
+    }
+];
+
+
+export const adminappsidebar = [
+    {
+        "usermenu":"AddUser",
+        "userroute":"adduser",
+        "usericon":"",
+    },
+    {
+        "usermenu":"AllUsers",
+        "userroute":"allusers",
+        "usericon":"",
+    },
+    {
+        "usermenu":"Invoice",
+        "userroute":"invoicepage",
+        "usericon":"",
+    },
+    {
+        "usermenu":"Others",
+        "userroute":"others",
+        "usericon":"",
+    }
+];
