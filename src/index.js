@@ -14,6 +14,8 @@ import Productdetails from './modules/users/userdashboard/Productdetails';
 import AdminLogin from './modules/admin/auth/AdminLogin';
 import AdminContainerpage from './modules/admin/admindashboard/AdminContainerpage';
 import Landingpage from './modules/admin/admindashboard/Landingpage';
+import Headoffice from './modules/users/mainbranch/Headoffice';
+import Apperror from './modules/sharecomponents/Apperror';
 
 
 
@@ -29,13 +31,15 @@ root.render(
               <Route path='' element={<UserMain/>}/>
               <Route path='productlist' element={<Productpage/>}/>
               <Route path='productlist/details/:id' element={<Productdetails/>}/>
+              <Route path='propspage' element={<Headoffice/>}></Route>
+              <Route path='*' element={<Apperror/>}/>
         </Route>
         <Route path='admins' element={<AdminLogin/>}/>
         <Route path='admindashboard' element={<AdminContainerpage/>}>
           <Route path='' element={<Landingpage/>}></Route>
         </Route>
 
-
+        <Route path='*' element={<Apperror/>}/> 
         <Route path='xyz' element={<UserMain/>}/>
 
       </Routes>

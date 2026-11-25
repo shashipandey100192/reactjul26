@@ -6,6 +6,7 @@ import { toast,ToastContainer } from 'react-toastify';
 function AdminLogin() {
     
     const {register,handleSubmit,formState: { errors }} = useForm();
+    const getdata =JSON.parse(localStorage.getItem("mylocal"));
     
     const xyz = useNavigate();
     const myform = (formdata)=>{
@@ -62,6 +63,13 @@ function AdminLogin() {
 
                             <div className='col-md-12'>
                                 <div class="mb-3">
+                                    <select>
+                                        {getdata.map((d)=>{
+                                            return(
+                                                <option>{d.name}</option>
+                                            )
+                                        })}
+                                    </select>
                                     <input type="submit" class="btn btn-success" value="Login" />
                                     <Link to="registor" className='float-end'>New Registor</Link>
                                 </div>
