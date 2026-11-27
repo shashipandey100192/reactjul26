@@ -16,6 +16,8 @@ import AdminContainerpage from './modules/admin/admindashboard/AdminContainerpag
 import Landingpage from './modules/admin/admindashboard/Landingpage';
 import Headoffice from './modules/users/mainbranch/Headoffice';
 import Apperror from './modules/sharecomponents/Apperror';
+import Graphpage from './modules/users/userdashboard/Graphpage';
+import Dashboardpage from './modules/users/userdashboard/Dashboardpage';
 
 
 
@@ -28,10 +30,11 @@ root.render(
         <Route path='users' element={<UserLogin/>}/>
         <Route path='users/registor' element={<UserRegistor/>}/>
         <Route path='userdashboard' element={<UserLandingPage/>}>
-              <Route path='' element={<UserMain/>}/>
+              <Route path='' element={<Dashboardpage/>}/>
               <Route path='productlist' element={<Productpage/>}/>
               <Route path='productlist/details/:id' element={<Productdetails/>}/>
               <Route path='propspage' element={<Headoffice/>}></Route>
+              <Route path='graphpage' element={<Graphpage/>}></Route>
               <Route path='*' element={<Apperror/>}/>
         </Route>
         <Route path='admins' element={<AdminLogin/>}/>

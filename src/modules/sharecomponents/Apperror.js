@@ -32,7 +32,7 @@ useEffect(()=>{
 },[])
 
   return (
-   <div className={`container-fluid  ${y}`}>
+   <div className={`container-fluid  ${y}`} style={{height:'100vh'}}>
     <div className='row'>
         <div className='col-12 text-center'>
             <h1>404</h1>

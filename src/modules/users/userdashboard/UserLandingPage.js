@@ -14,7 +14,7 @@ function UserLandingPage() {
           <div className='col-md-2 border'>
             <Appsidebar />
           </div>
-          <div className='col-md-10 border' style={{ minHeight: '90vh' }}>
+          <div className='col-md-10 border g-0' style={{ minHeight: '90vh' }}>
             <Outlet></Outlet>
 
           </div>

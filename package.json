@@ -19,6 +19,7 @@
     "react-router-dom": "^7.18.5",
     "react-scripts": "5.0.1",
     "react-toastify": "^11.2.0",
+    "recharts": "^3.11.1",
     "tailwindcss": "^4.3.4",
     "web-vitals": "^2.1.4"
   },
@@ -28,7 +29,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "backend":"npx json-server mydatabase.json --port 5800 --watch"
+    "backend": "npx json-server mydatabase.json --port 5800 --watch"
   },
   "eslintConfig": {
     "extends": [
