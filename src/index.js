@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { lazy,Suspense } from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";  
 import "bootstrap/dist/js/bootstrap.bundle.js";
 import "./modules/css/style.css";
@@ -18,6 +19,8 @@ import Headoffice from './modules/users/mainbranch/Headoffice';
 import Apperror from './modules/sharecomponents/Apperror';
 import Graphpage from './modules/users/userdashboard/Graphpage';
 import Dashboardpage from './modules/users/userdashboard/Dashboardpage';
+// import Lazypage from './modules/users/userdashboard/Lazypage';
+const Lazypage = lazy(()=>import("./modules/users/userdashboard/Lazypage.js"));
 
 
 
@@ -35,6 +38,11 @@ root.render(
               <Route path='productlist/details/:id' element={<Productdetails/>}/>
               <Route path='propspage' element={<Headoffice/>}></Route>
               <Route path='graphpage' element={<Graphpage/>}></Route>
+              <Route path='lazyloadingpage' element={<Suspense fallback={<h1 className='myloader'>Loading page...</h1>}>
+                      <Lazypage/>
+                  </Suspense>}>
+              </Route>
+
               <Route path='*' element={<Apperror/>}/>
         </Route>
         <Route path='admins' element={<AdminLogin/>}/>

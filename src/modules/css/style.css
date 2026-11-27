@@ -146,3 +146,13 @@
 .user-card:hover .card-footer {
     background: #f8fbff !important;
 }
+
+
+.myloader
+{
+  padding: 50px;
+  color:white;
+  text-align: center;
+  font-size: 40px;
+  background-color: red;
+}
